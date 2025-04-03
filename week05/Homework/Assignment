@@ -1,0 +1,28 @@
+using system;
+
+public class Assignment
+{
+    private string _studentName;
+    private string _topic;
+
+    public Assignment(string studentName, string topic)
+    {
+        _studentName = studentName;
+        _topic = topic;
+    }
+    // Providing getters for private member variables so they can be accessed
+    //later both outside the class as well is in derived classe.
+    public string GetStudentName()
+    {
+        return -_studentName;
+    }
+    public string GetTopic()
+    {
+        return _topic;
+    }
+
+    public string GetSummary()
+    {
+        return _studentName + "-" + _topic;
+    }
+}
